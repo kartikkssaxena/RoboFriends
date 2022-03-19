@@ -1,0 +1,21 @@
+.style{
+height: 400px;
+width: 300px;
+margin: 15px;
+background-color: rgb(173, 233, 173);
+text-align: center;
+transition: all 0.5s;
+border: 2px black solid;
+}
+
+.style:hover{
+    transform: scale(1.1);
+}
+
+h3, p{
+    font-weight: bolder;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
