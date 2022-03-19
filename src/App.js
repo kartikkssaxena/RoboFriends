@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ErrorBoundary from './Components/ErrorBoundary';
 import ShowRobots from './Containers/ShowRobots';
 
 class App extends Component {
@@ -7,7 +8,10 @@ class App extends Component {
 
     return (
       <div className="App ">
-        <ShowRobots />
+        <ErrorBoundary>
+          <ShowRobots />
+        </ErrorBoundary>
+
       </div>
     )
   }

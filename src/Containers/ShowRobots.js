@@ -21,7 +21,7 @@ export class ShowRobots extends Component {
         fetch("https://jsonplaceholder.typicode.com/comments")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                //console.log(data)
                 this.setState({ robots: data, Loading: false })
             })
             .catch((error) => {
@@ -36,7 +36,7 @@ export class ShowRobots extends Component {
 
     render() {
         const { searchField, robots, Loading } = this.state;
-        console.log(robots);
+        //console.log(robots);
         let filteredRobots;
         if (Array.isArray(robots)) {
             filteredRobots = robots.filter((robo) => robo.name.toLowerCase().slice(0, 10).includes(searchField.toLowerCase()))
